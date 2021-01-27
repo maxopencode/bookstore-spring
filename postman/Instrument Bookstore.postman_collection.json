@@ -1,0 +1,391 @@
+{
+	"info": {
+		"_postman_id": "8ca8110e-ff0f-43ad-b7a9-5b7cc84ffe61",
+		"name": "Instrument Bookstore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List Authors",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikd5UHBKcmJLLVB6SlV4RnFuclEyaCJ9.eyJpc3MiOiJodHRwczovL2Rldi1hNDY4cG1weS51cy5hdXRoMC5jb20vIiwic3ViIjoiakx5YXNqcU56REZpMDB5VzY3SmZGZGhlU3oxUGVaYTBAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vaW5zdHJ1bWVudC9ib29rc3RvcmUiLCJpYXQiOjE2MTA5OTQ0NjgsImV4cCI6MTYxMTA4MDg2OCwiYXpwIjoiakx5YXNqcU56REZpMDB5VzY3SmZGZGhlU3oxUGVaYTAiLCJzY29wZSI6ImF1dGhvcnM6cmVhZCIsImd0eSI6ImNsaWVudC1jcmVkZW50aWFscyJ9.h1i_sBxEr5UONT81EFVs1KGMSlxuS594JIeNa-xK_XAMzDKzoylgzBfL2EAUIztU_5B9OJU6o1V89HxRPGiKePWc36YfPf7MAuGy9pthuPvR32lU7_1rBYg0yOEmI42EJ4wLkVB28v3l7JmZnjWSLzja2XiQfdtuugc4d3rj9kTLvs6p1xXfa3hK6fX8u-pn2evd0I4zbbuT5SVBz-n1dMvL8eHsit_4FrwOlMxUYuRSJPEBGH-O4To6FrDcDuLQm8F3SiWQb1oEmhUPzISMmkMkcsf1-JFu-AnHsu1ZFZSiE8tWcH43-tExk_Rb7iQhEv5WtSzq3aNjDhxpQxmPEQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Author By ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikd5UHBKcmJLLVB6SlV4RnFuclEyaCJ9.eyJpc3MiOiJodHRwczovL2Rldi1hNDY4cG1weS51cy5hdXRoMC5jb20vIiwic3ViIjoiakx5YXNqcU56REZpMDB5VzY3SmZGZGhlU3oxUGVaYTBAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vaW5zdHJ1bWVudC9ib29rc3RvcmUiLCJpYXQiOjE2MTA5OTQ0NjgsImV4cCI6MTYxMTA4MDg2OCwiYXpwIjoiakx5YXNqcU56REZpMDB5VzY3SmZGZGhlU3oxUGVaYTAiLCJzY29wZSI6ImF1dGhvcnM6cmVhZCIsImd0eSI6ImNsaWVudC1jcmVkZW50aWFscyJ9.h1i_sBxEr5UONT81EFVs1KGMSlxuS594JIeNa-xK_XAMzDKzoylgzBfL2EAUIztU_5B9OJU6o1V89HxRPGiKePWc36YfPf7MAuGy9pthuPvR32lU7_1rBYg0yOEmI42EJ4wLkVB28v3l7JmZnjWSLzja2XiQfdtuugc4d3rj9kTLvs6p1xXfa3hK6fX8u-pn2evd0I4zbbuT5SVBz-n1dMvL8eHsit_4FrwOlMxUYuRSJPEBGH-O4To6FrDcDuLQm8F3SiWQb1oEmhUPzISMmkMkcsf1-JFu-AnHsu1ZFZSiE8tWcH43-tExk_Rb7iQhEv5WtSzq3aNjDhxpQxmPEQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/authors/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"authors",
+						"10"
+					]
+				},
+				"description": "Gets user by id"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Author",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikd5UHBKcmJLLVB6SlV4RnFuclEyaCJ9.eyJpc3MiOiJodHRwczovL2Rldi1hNDY4cG1weS51cy5hdXRoMC5jb20vIiwic3ViIjoiakx5YXNqcU56REZpMDB5VzY3SmZGZGhlU3oxUGVaYTBAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vaW5zdHJ1bWVudC9ib29rc3RvcmUiLCJpYXQiOjE2MTA5OTQ4NzAsImV4cCI6MTYxMTA4MTI3MCwiYXpwIjoiakx5YXNqcU56REZpMDB5VzY3SmZGZGhlU3oxUGVaYTAiLCJzY29wZSI6ImF1dGhvcnM6cmVhZCBhdXRob3JzOndyaXRlIiwiZ3R5IjoiY2xpZW50LWNyZWRlbnRpYWxzIn0.U6_TX9rAm9DZIV5ZgREH-bvIBjI1sO8rct8Q2el-5O49xDGQsHCI-htkN_M6uN1QK-w0nXjqVA-FVdzFlJ9Q_NknC7R1YKzoNJH0wa1Hy1z3Kk-DE4EwEGZ8FTLQw_2253BCPZFMPKejO6M9r9au6ggzyjwJwXm6y37uwelma5ICm2V7OYWZFgven9X82VcTeLZ5bJtWRi0Jh2ONvt9RNScntEQUiJNG083XMczv2SL-GZJPWTVTiY_Vo6oferBj0mluUIJFHuV5U654V0qGt-kfgYA6pQ6U6fZDmb9F4ctlVjcUYHBajAq1AJzPY9RAVi1vjVABja5Ucgnchpfxbw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Leo Tolstoy\",\n    \"birthdate\": \"1828-09-09\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"authors"
+					]
+				},
+				"description": "Create a new author"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Author",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikd5UHBKcmJLLVB6SlV4RnFuclEyaCJ9.eyJpc3MiOiJodHRwczovL2Rldi1hNDY4cG1weS51cy5hdXRoMC5jb20vIiwic3ViIjoiakx5YXNqcU56REZpMDB5VzY3SmZGZGhlU3oxUGVaYTBAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vaW5zdHJ1bWVudC9ib29rc3RvcmUiLCJpYXQiOjE2MTA5OTQ4NzAsImV4cCI6MTYxMTA4MTI3MCwiYXpwIjoiakx5YXNqcU56REZpMDB5VzY3SmZGZGhlU3oxUGVaYTAiLCJzY29wZSI6ImF1dGhvcnM6cmVhZCBhdXRob3JzOndyaXRlIiwiZ3R5IjoiY2xpZW50LWNyZWRlbnRpYWxzIn0.U6_TX9rAm9DZIV5ZgREH-bvIBjI1sO8rct8Q2el-5O49xDGQsHCI-htkN_M6uN1QK-w0nXjqVA-FVdzFlJ9Q_NknC7R1YKzoNJH0wa1Hy1z3Kk-DE4EwEGZ8FTLQw_2253BCPZFMPKejO6M9r9au6ggzyjwJwXm6y37uwelma5ICm2V7OYWZFgven9X82VcTeLZ5bJtWRi0Jh2ONvt9RNScntEQUiJNG083XMczv2SL-GZJPWTVTiY_Vo6oferBj0mluUIJFHuV5U654V0qGt-kfgYA6pQ6U6fZDmb9F4ctlVjcUYHBajAq1AJzPY9RAVi1vjVABja5Ucgnchpfxbw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Lev Tolstoy\",\n    \"birthdate\": \"1828-09-10\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/authors/12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"authors",
+						"12"
+					]
+				},
+				"description": "Updates existing author"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Author",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikd5UHBKcmJLLVB6SlV4RnFuclEyaCJ9.eyJpc3MiOiJodHRwczovL2Rldi1hNDY4cG1weS51cy5hdXRoMC5jb20vIiwic3ViIjoiakx5YXNqcU56REZpMDB5VzY3SmZGZGhlU3oxUGVaYTBAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vaW5zdHJ1bWVudC9ib29rc3RvcmUiLCJpYXQiOjE2MTA5OTQ4NzAsImV4cCI6MTYxMTA4MTI3MCwiYXpwIjoiakx5YXNqcU56REZpMDB5VzY3SmZGZGhlU3oxUGVaYTAiLCJzY29wZSI6ImF1dGhvcnM6cmVhZCBhdXRob3JzOndyaXRlIiwiZ3R5IjoiY2xpZW50LWNyZWRlbnRpYWxzIn0.U6_TX9rAm9DZIV5ZgREH-bvIBjI1sO8rct8Q2el-5O49xDGQsHCI-htkN_M6uN1QK-w0nXjqVA-FVdzFlJ9Q_NknC7R1YKzoNJH0wa1Hy1z3Kk-DE4EwEGZ8FTLQw_2253BCPZFMPKejO6M9r9au6ggzyjwJwXm6y37uwelma5ICm2V7OYWZFgven9X82VcTeLZ5bJtWRi0Jh2ONvt9RNScntEQUiJNG083XMczv2SL-GZJPWTVTiY_Vo6oferBj0mluUIJFHuV5U654V0qGt-kfgYA6pQ6U6fZDmb9F4ctlVjcUYHBajAq1AJzPY9RAVi1vjVABja5Ucgnchpfxbw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/authors/12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"authors",
+						"12"
+					]
+				},
+				"description": "Deletes an author using ID"
+			},
+			"response": []
+		},
+		{
+			"name": "Search Books",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikd5UHBKcmJLLVB6SlV4RnFuclEyaCJ9.eyJpc3MiOiJodHRwczovL2Rldi1hNDY4cG1weS51cy5hdXRoMC5jb20vIiwic3ViIjoiakx5YXNqcU56REZpMDB5VzY3SmZGZGhlU3oxUGVaYTBAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vaW5zdHJ1bWVudC9ib29rc3RvcmUiLCJpYXQiOjE2MTA5OTU1MjcsImV4cCI6MTYxMTA4MTkyNywiYXpwIjoiakx5YXNqcU56REZpMDB5VzY3SmZGZGhlU3oxUGVaYTAiLCJzY29wZSI6ImJvb2tzOnJlYWQgYXV0aG9yczpyZWFkIGF1dGhvcnM6d3JpdGUiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.MKd0dGk4KCmw4zgxFJHFvgMQ9V_0SfFF9xY0RJYTjhwsFNiIa9bWmS8bw9ihHdwbxXPvzc0JZWZXL4TcY-NzrvMx2yK506JR7VVU7QMK8t96xeTp6G_FL5QYGPieCjwnV4YswcoNRMHPWJCTnQ72NvCAGh27QG1mynKrV01mNRNI6a8BNnPUMtffm_mIOd_u_kXsr5y-Hvlv-eITGRS1xH-HCr8GMV0zVVcFtlugZEazC3tJU97WGVse3t5Qw-gFKXuu3FaivuNd3OiHaPbxoNtxy4hUp0YOiwputa4v27ZbeiRPpELwDGayt4sJTbFgMb0_zcq3B9F4LO8A1R4pAg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/books/paginate?size=10&sortBy=publicationYear&filterBy=author:Franz Kafka,publicationYear:1926",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"paginate"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "10",
+							"description": "Page size"
+						},
+						{
+							"key": "sortBy",
+							"value": "publicationYear",
+							"description": "Sort by field"
+						},
+						{
+							"key": "filterBy",
+							"value": "author:Franz Kafka,publicationYear:1926",
+							"description": "Filter"
+						}
+					]
+				},
+				"description": "Searches books, filtering by either author name or publication year and sorting"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Book by ISBN",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikd5UHBKcmJLLVB6SlV4RnFuclEyaCJ9.eyJpc3MiOiJodHRwczovL2Rldi1hNDY4cG1weS51cy5hdXRoMC5jb20vIiwic3ViIjoiakx5YXNqcU56REZpMDB5VzY3SmZGZGhlU3oxUGVaYTBAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vaW5zdHJ1bWVudC9ib29rc3RvcmUiLCJpYXQiOjE2MTA5OTU1MjcsImV4cCI6MTYxMTA4MTkyNywiYXpwIjoiakx5YXNqcU56REZpMDB5VzY3SmZGZGhlU3oxUGVaYTAiLCJzY29wZSI6ImJvb2tzOnJlYWQgYXV0aG9yczpyZWFkIGF1dGhvcnM6d3JpdGUiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.MKd0dGk4KCmw4zgxFJHFvgMQ9V_0SfFF9xY0RJYTjhwsFNiIa9bWmS8bw9ihHdwbxXPvzc0JZWZXL4TcY-NzrvMx2yK506JR7VVU7QMK8t96xeTp6G_FL5QYGPieCjwnV4YswcoNRMHPWJCTnQ72NvCAGh27QG1mynKrV01mNRNI6a8BNnPUMtffm_mIOd_u_kXsr5y-Hvlv-eITGRS1xH-HCr8GMV0zVVcFtlugZEazC3tJU97WGVse3t5Qw-gFKXuu3FaivuNd3OiHaPbxoNtxy4hUp0YOiwputa4v27ZbeiRPpELwDGayt4sJTbFgMb0_zcq3B9F4LO8A1R4pAg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/books/9780671867805",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"9780671867805"
+					]
+				},
+				"description": "Gets a book by its ISBN"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikd5UHBKcmJLLVB6SlV4RnFuclEyaCJ9.eyJpc3MiOiJodHRwczovL2Rldi1hNDY4cG1weS51cy5hdXRoMC5jb20vIiwic3ViIjoiakx5YXNqcU56REZpMDB5VzY3SmZGZGhlU3oxUGVaYTBAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vaW5zdHJ1bWVudC9ib29rc3RvcmUiLCJpYXQiOjE2MTA5OTU5NjUsImV4cCI6MTYxMTA4MjM2NSwiYXpwIjoiakx5YXNqcU56REZpMDB5VzY3SmZGZGhlU3oxUGVaYTAiLCJzY29wZSI6ImJvb2tzOnJlYWQgYm9va3M6d3JpdGUgYXV0aG9yczpyZWFkIGF1dGhvcnM6d3JpdGUiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.Mtm2_MNBbW3X-JTNlUekAIyZqpUZ6Vp2wmtkvR8_gNVAajDjE1wMot-tQgX0NpLVPyxC7Q18m52RWNJ88AG-O_Wnybilk8ZZ6sD_hyV5a7_0P6T3c5NJYmsZBXKYaCR_Cc9yk2nI4uYNWUTyu-TZ_uxLUJ2ySWm--jkDWlRRFIffQB7qQGaHEK64Eukf_hcTA5aVzK_rhVOHm62ZGQUvhlkXlMAKY0i29YUj54ZgDR0E4BbTZEUdKKuWT-y381eWE3kc27yoovuVx8NIwZXYS-VzOP0OSWAiXPXSgKCh1B6Qoianzi8D026d4p-BFQczlN6Vni6jbqhNkpP-BY017g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"The Death of Ivan Ilyich\",\n    \"isbn\" : \"9798643035046\",\n    \"publisher\": \"unknown\",\n    \"publicationYear\": 1886,\n    \"description\": \"Widely considered to be one of the finest novellas ever written, The Death of Ivan Ilyich tells the story of a high-court judge in 19th-century Russia and his sufferings and death from a terminal illness.\",\n    \"author\": {\n        \"id\": 13\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"books"
+					]
+				},
+				"description": "Creates a book"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikd5UHBKcmJLLVB6SlV4RnFuclEyaCJ9.eyJpc3MiOiJodHRwczovL2Rldi1hNDY4cG1weS51cy5hdXRoMC5jb20vIiwic3ViIjoiakx5YXNqcU56REZpMDB5VzY3SmZGZGhlU3oxUGVaYTBAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vaW5zdHJ1bWVudC9ib29rc3RvcmUiLCJpYXQiOjE2MTA5OTU5NjUsImV4cCI6MTYxMTA4MjM2NSwiYXpwIjoiakx5YXNqcU56REZpMDB5VzY3SmZGZGhlU3oxUGVaYTAiLCJzY29wZSI6ImJvb2tzOnJlYWQgYm9va3M6d3JpdGUgYXV0aG9yczpyZWFkIGF1dGhvcnM6d3JpdGUiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.Mtm2_MNBbW3X-JTNlUekAIyZqpUZ6Vp2wmtkvR8_gNVAajDjE1wMot-tQgX0NpLVPyxC7Q18m52RWNJ88AG-O_Wnybilk8ZZ6sD_hyV5a7_0P6T3c5NJYmsZBXKYaCR_Cc9yk2nI4uYNWUTyu-TZ_uxLUJ2ySWm--jkDWlRRFIffQB7qQGaHEK64Eukf_hcTA5aVzK_rhVOHm62ZGQUvhlkXlMAKY0i29YUj54ZgDR0E4BbTZEUdKKuWT-y381eWE3kc27yoovuVx8NIwZXYS-VzOP0OSWAiXPXSgKCh1B6Qoianzi8D026d4p-BFQczlN6Vni6jbqhNkpP-BY017g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"The Death of Ivan Ilyich\",\n    \"isbn\" : \"9798643035046\",\n    \"publisher\": \"Not known\",\n    \"publicationYear\": 1886,\n    \"author\": {\n        \"id\": 13\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/books/9798643035046",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"9798643035046"
+					]
+				},
+				"description": "Updates an existing book"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikd5UHBKcmJLLVB6SlV4RnFuclEyaCJ9.eyJpc3MiOiJodHRwczovL2Rldi1hNDY4cG1weS51cy5hdXRoMC5jb20vIiwic3ViIjoiakx5YXNqcU56REZpMDB5VzY3SmZGZGhlU3oxUGVaYTBAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vaW5zdHJ1bWVudC9ib29rc3RvcmUiLCJpYXQiOjE2MTA5OTU5NjUsImV4cCI6MTYxMTA4MjM2NSwiYXpwIjoiakx5YXNqcU56REZpMDB5VzY3SmZGZGhlU3oxUGVaYTAiLCJzY29wZSI6ImJvb2tzOnJlYWQgYm9va3M6d3JpdGUgYXV0aG9yczpyZWFkIGF1dGhvcnM6d3JpdGUiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.Mtm2_MNBbW3X-JTNlUekAIyZqpUZ6Vp2wmtkvR8_gNVAajDjE1wMot-tQgX0NpLVPyxC7Q18m52RWNJ88AG-O_Wnybilk8ZZ6sD_hyV5a7_0P6T3c5NJYmsZBXKYaCR_Cc9yk2nI4uYNWUTyu-TZ_uxLUJ2ySWm--jkDWlRRFIffQB7qQGaHEK64Eukf_hcTA5aVzK_rhVOHm62ZGQUvhlkXlMAKY0i29YUj54ZgDR0E4BbTZEUdKKuWT-y381eWE3kc27yoovuVx8NIwZXYS-VzOP0OSWAiXPXSgKCh1B6Qoianzi8D026d4p-BFQczlN6Vni6jbqhNkpP-BY017g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/books/9798643035046",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"9798643035046"
+					]
+				},
+				"description": "Deletes existing book"
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,5 @@
+sudo mysql
+mysql> create database bookstore;   -- Creates the new database
+mysql> create user 'admin'@'%' identified by 'AmazonKiller';    -- Creates the user
+mysql> grant all on bookstore.* to 'admin'@'%';     -- Gives all privileges to the new user on the newly created database
+mysql> exit;

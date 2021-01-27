@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.2.xsd">
+
+    <changeSet author="admin" id="changelog-1.1">
+        <sql>
+            INSERT INTO authors (name, birthdate)
+            VALUES ('James Joyce', DATE '1882-02-02'),
+                ('Virginia Woolf', DATE '1882-01--25'),
+                ('Franz Kafka', DATE '1883-07-03'),
+                ('Marcel Proust', DATE '1871-07-10'),
+                ('Ernest Hemingway', DATE '1899-07-21'),
+                ('Theodore Dreiser', DATE '1871-08-27'),
+                ('Jack London', DATE '1876-01-12'),
+                ('Jean-Paul Sartre', DATE '1905-06-21'),
+                ('Jack Kerouac', DATE '1922-03-12'),
+                ('Ray Bradbury', DATE '1920-08-22');
+        </sql>
+    </changeSet>
+</databaseChangeLog>

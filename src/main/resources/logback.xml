@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="20 seconds">
+
+  <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+  <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+
+  <logger level="DEBUG" name="com.instrument"/>
+
+  <logger level="INFO" name="org.hibernate.cache"/>
+  <logger level="INFO" name="org.hibernate.stat"/>
+  <logger level="DEBUG" name="org.hibernate.SQL"/>
+  <!--logger name="org.hibernate.type.descriptor.sql" level="TRACE"/-->
+
+  <logger level="DEBUG" name="org.springframework.security"/>
+  <logger level="INFO" name="org.springframework.web"/>
+  <!--logger name="org.springframework.web.servlet.mvc.method.annotation" level="TRACE"/-->
+
+  <root level="INFO">
+    <appender-ref ref="CONSOLE"/>
+  </root>
+
+</configuration>
